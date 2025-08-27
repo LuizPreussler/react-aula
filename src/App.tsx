@@ -12,7 +12,7 @@ interface ICardProps {
 const Card = (props: ICardProps) => {
   return (
     <div style={{ border: "1px solid black", fontSize: Number(props.fontSize) }}>
-      <span>Title: {props.title}</span>
+      <span>Title: teste{props.title}</span>
       <div>Footer </div>
     </div>
   );
