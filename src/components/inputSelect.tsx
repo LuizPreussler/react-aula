@@ -2,14 +2,14 @@ import { useState } from "react";
 import data from '../resources/estados_municipios.json'
 
 interface SelectItemProps {
-    onSelect(value: string): void;
+    onSelect(value: any): void;
 }
 
 function UFSelect(props: SelectItemProps) {
   const [list, setList] = useState(data);
 
   const handleChange = (e: any) => {
-    props.onSelect(list[e.target.value-1].grupo)
+    props.onSelect(list[e.target.value-1])
   };
 
   return (
